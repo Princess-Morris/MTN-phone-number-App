@@ -63,6 +63,42 @@ const eleven = (str) => {
     return true
 }
 
+const isStringMTNNum = (str) => {
+//   get the first three caractars in the string
+  const firstThree = str.slice(0,4)
+   
+//   console.log("123456")
+    if(!eleven(str)){
+        return false
+    }
+  
+    // if firstthreechar === 0802 || first3 === 89
+    console.log(firstThree)
+  
+    // if(
+    //     firstThree !== "0803" &&
+    //     firstThree !== "0806" &&
+    //     firstThree !== "0703" &&
+    //     firstThree !== "0706" &&
+    //     firstThree !== "0810" &&
+    //     firstThree !== "0813" &&
+    //     firstThree !== "0814" &&
+    //     firstThree !== "0816" &&
+    //     firstThree !== "0903" &&
+    //     firstThree !== "0906" 
+    // ){
+    //     return false
+    // }
+    
+    const mtnPrefixes = [
+      "0803", "0806", "0703", "0706", "0810", "0813", 
+      "0814", "0816", "0903", "0906"
+    ]
+    
+    return mtnPrefixes.includes(firstThree)
+}
+
+
     </script>
 </body>
 </html>
