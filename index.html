@@ -53,6 +53,15 @@ const isNumeric = (str) => {
 
 // console.log(isNumeric("17439"))
 
+const eleven = (str) => {
+    if(!isNumeric(str)){
+        return false
+    }
+    if(str.length !== 11){
+        return false
+    }
+    return true
+}
 
     </script>
 </body>
