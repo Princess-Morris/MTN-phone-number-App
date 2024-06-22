@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Yello</title>
 </head>
 <body>
     <form class="input-wrapper" onsubmit="return handleSubmit(event)">
@@ -27,6 +29,14 @@
   
 
     <script>
+ const isNum = (char) => {
+    const code = char.charCodeAt(0)
+    return (
+        code >= 48 && code <= 57
+        ) 
+}
+
+// console.log(isNumeric("k"))
 
     </script>
 </body>
