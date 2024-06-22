@@ -98,6 +98,23 @@ const isStringMTNNum = (str) => {
     return mtnPrefixes.includes(firstThree)
 }
 
+const handleSubmit = (event) => {
+    event.preventDefault()
+
+    const phoneNumber = document.getElementById("phoneNumber").value
+    const providerDisplay = document.getElementById("provider")
+
+    if(isStringMTNNum(phoneNumber)){
+      providerDisplay.textContent = "😊Yello! Your MTN number is valid."
+    } else {
+      providerDisplay.textContent = "🙂Uh-oh! Not an MTN number."
+    }
+
+    if(!phoneNumber){
+      providerDisplay.textContent = ""
+    }
+  }
+
 
     </script>
 </body>
