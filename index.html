@@ -38,6 +38,22 @@
 
 // console.log(isNumeric("k"))
 
+const isNumeric = (str) => {
+    let onlyNumbers = ''
+    for (let i = 0; i < str.length; i++){
+        const char = str[i]
+        if(!isNum(char)){
+        return false
+        }
+        onlyNumbers = onlyNumbers + char
+    }
+    
+    return true
+}
+
+// console.log(isNumeric("17439"))
+
+
     </script>
 </body>
 </html>
